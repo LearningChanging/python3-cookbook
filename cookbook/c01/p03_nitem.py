@@ -14,6 +14,7 @@ def search(lines, pattern, history=5):
             yield li, previous_lines
         previous_lines.append(li)
 
+
 # Example use on a file
 if __name__ == '__main__':
     with open(r'../../cookbook/somefile.txt') as f:
@@ -22,6 +23,3 @@ if __name__ == '__main__':
                 print(pline, end='')
             print(line, end='')
             print('-' * 20)
-
-
-
